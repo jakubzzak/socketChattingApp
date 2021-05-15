@@ -122,6 +122,3 @@
     </build>
 
 </project>
-
-
-<!-- "mvn clean package" -> builds production app -->

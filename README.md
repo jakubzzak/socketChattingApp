@@ -1,12 +1,26 @@
-# socketChattingApp
+local chatting app
+===
 
-**about**
+### Run
 
-A simple chatting app to learn how javafx's scene builder works, using java sockets
+Once you have cloned the repository into your local machine, run this command within the root of the folder:
 
-It starts server on a divice provided IP adress from and creates server using provided port. If server exists, it connects to it via given port.
+```mvn clean package```
 
-**run**
+This builds the executable jar file with name "chattingApp-{version}.jar", which can be found in the generated target folder.
+Navigate to the target folder and run the application with the following command:
 
-HelpMain.java - runs Main.java since Main.java contains javafx syntax that can not be called directly once deployed
+```java -jar chattingApp-{version}.jar```
 
+### Test
+
+To test the app, you can make it run multiple times from different tabs in your terminal.
+
+### So how does it work? 
+
+Well, first we need a machine which is going to host the whole conversation, thus
+first person who runs the app can enter arbitrary port. Any other user who wants to connect to this server
+needs to provide ip address and port of the server. If there is nobody listening on the entered port,
+the app will start new server. If the server exists, anyone from local network can join.
+
+Have a nice chat!
